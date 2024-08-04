@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "therium",
+	"id": "socket",
 	"version": "${version}",
-	"name": "Therium",
+	"name": "Socket",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"froze"
@@ -12,18 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/therium/icon.png",
+	"icon": "assets/socket/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.therium.Therium"
+			"com.socket.Socket"
+		],
+		"client": [
+			"com.socket.SocketModClient"
 		],
 		"fabric-datagen": [
-			"com.therium.TheriumModDataGenerator"
+			"com.socket.SocketModDataGenerator"
 		]
 	},
 	"mixins": [
-		"therium.mixins.json",
+		"socket.mixins.json",
 		{
 			"config": "modid.client.mixins.json",
 			"environment": "client"

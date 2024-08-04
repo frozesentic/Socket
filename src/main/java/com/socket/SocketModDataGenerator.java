@@ -1,9 +1,9 @@
-package net.therium;
+package com.socket;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
-public class TheriumModDataGenerator implements DataGeneratorEntrypoint {
+public class SocketModDataGenerator implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 
